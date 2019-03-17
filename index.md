@@ -7,6 +7,7 @@ layout : default
 # Dico digital
 > Un doigt de vocabulaire pour comprendre le monde numérique.
 NB: Certaines définitions du dicodigital datent de 2017 !
+Licence : 
 
 ## #0-9
 - *#c0ffee :* plus belle couleur du monde.
@@ -973,3 +974,103 @@ NB: Certaines définitions du dicodigital datent de 2017 !
 - @Trane1000
 - tth
 - et 22 anonymes
+
+## Extrait des discussions de 2017 (pour en garder une trace)
+
+
+### Fonctions qui pourrait être bien quand même
+
+Tags permettant de définir où s'applique le mot (graphisme / dev / inté / ux / gestion de projet...)
+Liste de liens (courts pour approfondir l'explication)
+Système de vote (<ticabri> genre le user peut créer une entrée, chacun peut ajouter une définition mais seule la définition avec le plus de like est affichée, sinon pour les voir toutes, faut cliquer sur "voir toutes" et comme ça tu peux voter)
+Un minimum de modération
+Dr Jekyll et Mr Hyde Hype ? >> le dicodigital = troll du diconumérique
+Liens vers d'autres définitions
+Remerciements pour le créateur de la def
+Mettre des définitions cultes
+<Daerist> Prévoir un endroit où lister les mots sans définitions !
+Proposer une définition du jour
+Permettre de demander une explication sur une définition (mode captain obvious)
+Voter pour les defs
+
+
+ticabri: tu peux aussi avoir deux workflow : proposition de mots à définir + modération/édition du dictionnaire. Avec pour chaque workflow 2 types de droits, humain ou dieu.
+saisai> maiwann: Pour ton dico de définition, tu peux utiliser une simple Google Spreadsheet. Si tu veux que ça passe par Github, avec seulement certaines personnes qui peuvent éditer, tu peux utiliser http://prose.io/, comme éditeur, aussi (ça permet d'éditer directement (avec commit) les fichiers sur lesquels tu as les droits Github, il te suffira de mettre les éditeurs dans une organisation Github (webeux ? :p).
+<ticabri> Besoin #1 : faire voir le dico aux humains
+<ticabri> Besoin #2 : ajouter/modifier des définitions par dieu Donald
+<ticabri> Besoin #3 : permettre aux humains de proposer des définitions que dieu peut ajouter
+<ticabri> Besoin #4 : boire un coup ce soir au 4 monkeys
+suggestion pour feature ultérieure : permettre aux humains de noter les définitions
+on a qu'à mettre un stackoverflow ? // keskec'est ? http://stackoverflow.com/ peut-être too much pour un dico ... // à voir sachant qu'il faut que ca reste accessible pour les noobs du dev et couplé au dico ^^ oui, pas faux. Je sais que ça existe en libre, mais je ne me souviens plus du nom
+
+### extrait de la conv IRC avec plein de mots compliqués
+
+<maiwann> Est ce que ca serait pas bien de créer un lexique qui expliquerait simplement à des noobs des mots du web
+<maiwann> Histoire de faciliter les interaction entre dev / graphistes / inté / chef de projet / ta mère ?
+<maiwann> genre benchmark / back-end/ git / MVC ....
+<ticabri> le dico digital ?
+<ticabri> un doigt de vocabulaire pour comprendre le monde numérique
+<maiwann> Je valide le titre
+<Daerist> Suis curieux de savoir ou va aller le doigt digital :D
+<farlistener> DTCN ?
+<Daerist> Dans Ton Cul Numérique ?
+<ticabri> https://lite6.framapad.org/p/dicodigital
+<maiwann> Nooooooooon pas de pad !
+<maiwann> Un joli site :3
+<ticabri> oui bien sûr, c'est pour le contenu
+<ticabri> ou alors avec un site en mode collaboratif
+<maiwann> ce qui m'amène à ma deuxième question:
+<maiwann> Comment on peut faire un site open source autrement qu'en l'hébergeant chez Github ?
+<ticabri> genre le user peut créer une entrée, chacun peut ajouter une définition mais seule la définition avec le plus de like est affichée, sinon pour les voir toutes, faut cliquer sur "voir toutes" et comme ça tu peux voter
+<Daerist> "Un doigt de vocabulaire pour comprendre le monde numérique"
+<michel_v> en l'hébergeant n'importe où ailleurs, du moment que le source est téléchargeable
+<ticabri> maiwann: c'est quoi le hic avec github ?
+<maiwann> c'est qu'on peut pas mettre de dynamique non ?
+<saisai> maiwann: Tu peux  avoir ton propre serveur :)
+<saisai> maiwann: Ca dépend ce que tu appelles "dynamiques".
+<ticabri> ah...
+<maiwann> oui mais comment je propose le code ?
+<saisai> Les Github Pages supportent Jekyll, par exemple.
+<maiwann> saisai > tu me parles chinois là =/
+<Daerist> (Et là on voit tout les devs qui sortent leurs termes techniques :p)
+<maiwann> oui voilà, par contre quand j'ai proposé l'idée aucune nouvelle
+<ticabri> jekyll c'est un système de blog avec que des pages statiques, mais animé avec du javascript
+<maiwann> pour les sortir il y a du monde mais pour les expliciter x)
+<ticabri> ça fonctionne donc très bien sur l'hébergement github qu'on appelle github page
+<saisai> maiwann: Jekyll est un pseudo-CMS, qui génère des pages statiques, et que Github supporte nativement.
+<ticabri> et pour ajouter du contenu tu updates un fichier dans github
+<Daerist> Sinon tu te met au python puis avec un petit service d'intégration, tu lui fais compiler / push tes pages :p
+<maiwann> ok, mais si je veux avoir un système du genre on propose une définition et elle est publiée, ca passe ?
+<ticabri> notez tous ces mots, c'est cela qu'il faudrait définir ;)
+<Daerist> A l'aide de pull request / issues
+<Daerist> ça peut le faire :D
+<ticabri> tu proposes la définition par quel moyen ? directement depuis le site ?
+<Daerist> (Ceux là aussi ;) )
+<maiwann> Non mais Daerist le dev ici c'est pas moi, tu me fais rire, le gars qui va bosser le python c'est toi
+<Daerist> maiwann: Demain, demain :)
+<maiwann> ticabri > Je dirai oui...
+<maiwann> (j'y ai pas réfléchi vraiment)
+<ticabri> donc avec une api git en javascript ça doit se faire ;)
+<Daerist> Par contre suis curieux d'en savoir un peu plus sur l'api git en JS
+<Daerist> Va falloir un user
+<ticabri> tu le demandes à la volée
+<Daerist> (notre sysadmin doit en faire, mais pas moi quoi :p)
+
+<mab> [troll]est-ce que "je fais du symfony, pas du PHP", c'est pareil que "je fais du jQuery, pas du Javascript" ?
+<Daerist> Faire du Symfony ça permet de comprendre plein de trucs \o/
+<carobee> mab: certainement !
+<farlistener> perso j'ai un client qui utilise Code Igniter
+<Daerist> A l'avant dernier apero web j'ai "osé" dire que je touchais du JS, quand j'ai dis que c'était de l'angular, on m'a taquiné toute la soirée :'(
+<ticabri> Je crois surtout que ce qui compte c'est de connaitre le langage avant de connaitre le framework
+<ticabri> Angular c'est une chose, mais c'est grâce à js que ça tourne
+<ticabri> Symfony pareil pour php
+<ticabri> Play pareil pour java (ou scala)
+<ticabri> Je rajoute un mot au dicodigital
+<maiwann> putain je vais faire un contre dicodigital
+<maiwann> on peut faire ça non ? un coté diconumérique et un autre dicodigital
+<ticabri> excellent XML
+<maiwann> je suis motivée
+<ticabri> le dicodigital c'est le pendant trolleisque du diconumérique
+<maiwann> diconumérique avec les vrais définitions, et le dicodifital avec les conneries
+<maiwann> ouiii ticabri o/
+<ticabri> du coup faudrait que le dicodigital soit validé french tech
