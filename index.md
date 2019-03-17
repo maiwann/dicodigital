@@ -6,7 +6,9 @@ layout : default
 
 # Dico digital
 > Un doigt de vocabulaire pour comprendre le monde numérique.
+
 NB: Certaines définitions du dicodigital datent de 2017 !
+
 Licence :
 
 ## #0-9
